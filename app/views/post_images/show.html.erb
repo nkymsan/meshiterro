@@ -43,7 +43,7 @@
                 <div class="comment-body bb">
                   <div class="comment-avatar">
                     <div class="avatar">
-                      <%= image_tag('sample-author1.jpg'), style: "width: 60px; height: 60px;") %>
+                      <%= image_tag('sample-author1.jpg', style: "width: 60px; height: 60px;") %>
                     </div>
                   </div>
                   <div class="comment-text">
@@ -71,10 +71,10 @@
           <%= form_for [@post_image, @post_comment] do |f| %>
             <div class="row">
               <div class="col-sm-12">
-                <%= f.text_area :comment, rows:'5', class="form-control", placeholder: "コメントをここに" %>
+                <%= f.text_area :comment, rows:'5', class: "form-control",placeholder: "コメントをここに" %>
               </div>
             </div>
-            <%= f.submit "送信する", class="btn btn-lg btn-base-1 mt-20 pull-right" %>
+            <%= f.submit "送信する", class: "btn btn-lg btn-base-1 mt-20 pull-right" %>
           <% end %>
 
         </div>
